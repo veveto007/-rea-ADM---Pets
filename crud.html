@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_crud.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="image/icon2.png">
+    <script src="js/crudPets.js" defer type="module"></script>
+    <title>Crud - Pets</title>
+</head>
+<body>
+
+    <!-- conteudo do cabeçalho -->
+    <header>
+            <figure class="logo">
+
+            </figure>
+
+    </header>
+
+    <!-- conteudo principal -->
+    <main>
+        <section id="pet">
+            <div id="cadastro">
+                <h1>Cadastro de Pets</h1>
+                <form id="form">
+                    <label>Nome</label> 
+                    <input type="text" name="txt_title" id="nome" >
+                    <label>Cor</label> 
+                    <input type="text" name="txt_raca" id="cor" >
+                    <label>Raca</label> 
+                    <input type="text" name="txt_raca" id="raca" >
+                    <label>Imagem</label> 
+                    <input type="text" name="txt_image" id="image" >
+                    <div id="salvar_bot"> Salvar </div>
+                </form>
+            </div>
+
+            <div id="listPets">
+                <h1> Lista de Pets </h1>
+                <div class="linha">
+                    <div class="titulo">Nome</div>
+                    <div class="titulo">Cor</div>
+                    <div class="titulo">Raca</div>
+                    <div class="titulo">Opções</div>
+                </div>
+                <div id="listDados">
+                    
+                        <div id="dados" class="linha dados"> 
+                            <div class="titulo_2">Nome</div>
+                            <div class="titulo_2">Cor</div>
+                            <div class="titulo_2">Raca</div>
+                            <div>
+                                <span>
+                                    <img src="img/icons-editar.png">
+                                </span>  
+                                <span>
+                                    <img src="img/icons-lixeira.png">
+                                </span>
+                            </div>
+                        </div>
+                   
+                    
+                </div>
+               
+            </div>
+
+        </section>
+    </main>
+
+    <!-- conteudo do rodape -->
+    <footer>
+        <div class="direitos">
+            © 2024 - Gerencimento de Pets. Todos os direitos reservados.
+        </div>
+    </footer>
+
+</body>
+</html>
